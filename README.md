@@ -5,7 +5,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## **About The Project**
-In current world buying and selling stocks is a powerful way to earn money. If done right people can become millionares over the years. But it also has its risk. Not all have the luxary to invest huge sums to try the market. This is where this project comes in picture. Thisproject simulates buying and selling of stocks which gives them a rough idea if the endevour will reciprocate desired results.
+In current world buying and selling stocks is a powerful way to earn money. If done right people can become millionares over the years. But it also has its risk. Not all have the luxary to invest huge sums to try the market. This is where this project comes in picture. This project simulates buying and selling of stocks which gives them a rough idea if the endevour will reciprocate desired results.
 
 ## **Key Features**
 1. Register, Login/Logout
@@ -49,7 +49,7 @@ Python must be installed on your system if running locally.
    ```
 4. Visit the following site and copy the key that appears under the token column(it should begin with pk_)
    ```sh
-   https://iexcloud.io/cloud-login?r=https%3A%2F%2Fiexcloud.io%2Fconsole%2Ftokens
+   https://iexcloud.io/console/tokens
    ```
 5. In the terminal window, execute
    ```sh
