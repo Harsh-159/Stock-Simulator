@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table>
+    <tr>
+      <th>Symbol</th>
+      <th>Company Name</th>
+      <th>Nature of Transaction</th>
+      <th>Total Stock</th>
+      <th>Stock Prices</th>
+      <th>Total Value</th>
+      <th>Time</th>
+    </tr>
+    {%for i in all%}
+        <tr>
+            <td>{{i['symbol']}}</td>
+            <td>{{i['company_name']}}</td>
+            <td>{{i['nature']}}</td>
+            <td>{{i['stock_number']}}</td>
+            <td>{{i['price_stocks']}}</td>
+            <td>{{i['total_value']}}</td>
+            <td>{{i['time']}}</td>
+        </tr>
+    {%endfor%}
+  </table>
+{% endblock %}

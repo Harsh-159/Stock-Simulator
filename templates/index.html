@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<table>
+    <tr>
+      <th>Symbol</th>
+      <th>Company Name</th>
+      <th>Total Stock</th>
+      <th>Stock Prices</th>
+      <th>Total Value</th>
+    </tr>
+    {%for i in all%}
+        <tr>
+            <td>{{i['symbol']}}</td>
+            <td>{{i['company_name']}}</td>
+            <td>{{i['total_stocks']}}</td>
+            <td>{{i['price_stocks']}}</td>
+            <td>{{i['total_value']}}</td>
+        </tr>
+    {%endfor%}
+  </table>
+  <h3>Your current balance is {{balance}}</h3>
+  <h3>Your total holdings are {{total}}</h3>
+{% endblock %}

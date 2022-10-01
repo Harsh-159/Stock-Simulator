@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    {%if needed%}
+        <form action="/quote" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Enter symbol" type="text">
+            </div>
+            <button class="btn btn-primary" type="submit">Show Quote</button>
+        </form>
+    {%else%}
+        {%if not exist%}
+        <h2>The stock symbol {{symbol}} does not exist.</h2>
+        {%else%}
+        <h2>The price of {{symbol}} is {{price}}</h2>
+        {%endif%}
+    {%endif%}
+{% endblock %}
