@@ -56,7 +56,7 @@ Python must be installed on your system if running locally.
    $ export API_KEY=value
    ```
 6. Run flask server
-  ``sh
+  ```sh
    flask run
    ```
 
